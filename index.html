@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Productivity | Mastery for High-Performers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/framer-motion@latest/dist/framer-motion.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030405;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-primary {
+            background: rgba(59, 130, 246, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #fbbf24);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-glow {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 600px;
+            background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #030405;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-300 selection:bg-blue-500/30">
+    <div class="hero-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/20">
+                    <i data-lucide="zap" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold text-white tracking-tight uppercase">Ultimate</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold">
+                <a href="#features" class="hover:text-blue-400 transition-colors">Features</a>
+                <a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a>
+                <a href="https://wa.me/918697164049" class="hover:text-blue-400 transition-colors">Contact</a>
+                <a href="https://wa.me/918697164049"
+                    class="px-5 py-2.5 bg-white text-black rounded-full hover:bg-slate-200 transition-all active:scale-95">Get
+                    Started Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+                    Now Available for Public Use
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
+                    Master Your <span class="text-gradient">Potential</span>, Not Just Your Tasks.
+                </h1>
+                <p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+                    The ultimate open-source productivity suite designed for high-performers. Manage complex projects,
+                    build unbreakable habits, and reclaim your absolute freedom.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button
+                        class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-xl shadow-blue-600/20 hover:bg-blue-500 hover:-translate-y-1 transition-all active:scale-95 flex items-center justify-center gap-2">
+                        Open Dashboard <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                    <button
+                        class="px-8 py-4 glass text-white rounded-2xl font-bold hover:bg-white/5 hover:-translate-y-1 transition-all active:scale-95 flex items-center justify-center gap-2">
+                        <i data-lucide="github" class="w-5 h-5"></i> View Source
+                    </button>
+                </div>
+                <div class="flex items-center gap-6 pt-8 grayscale opacity-50">
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Used by Builders at</span>
+                    <div class="flex gap-4">
+                        <i data-lucide="chrome" class="w-5 h-5"></i>
+                        <i data-lucide="framer" class="w-5 h-5"></i>
+                        <i data-lucide="figma" class="w-5 h-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-amber-600 rounded-[2.5rem] blur opacity-25 group-hover:opacity-40 transition duration-1000">
+                </div>
+                <div class="relative glass rounded-[2.5rem] overflow-hidden shadow-2xl">
+                    <img src="./mockup.png" alt="Dashboard Mockup"
+                        class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <!-- Floating Info Cards -->
+                <div
+                    class="absolute top-10 -right-10 glass-primary p-6 rounded-3xl shadow-2xl hidden xl:block animate-bounce-slow">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-500 flex items-center justify-center">
+                            <i data-lucide="flame" class="w-7 h-7"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase">Top Streak</p>
+                            <p class="text-2xl font-bold text-white">24 Days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-6 bg-slate-950/20">
+        <div class="max-w-7xl mx-auto space-y-20">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <h2 class="text-[10px] font-extrabold text-blue-500 uppercase tracking-[0.3em]">The Ecosystem</h2>
+                <h3 class="text-4xl font-bold text-white">Tools for every dimension of performance.</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Task Board -->
+                <div class="glass p-8 rounded-[2rem] hover:border-blue-500/30 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-600/10 text-blue-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="layout" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-3 tracking-tight uppercase">High-Velocity Board</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Manage your sprints with a sleek Kanban interface
+                        built for speed and clarity.</p>
+                </div>
+
+                <!-- Habits -->
+                <div class="glass p-8 rounded-[2rem] hover:border-amber-500/30 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-amber-600/10 text-amber-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="calendar" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-3 tracking-tight uppercase">Focus Rhythms</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Interactive heatmaps to visualize your consistency
+                        and protect your streaks.</p>
+                </div>
+
+                <!-- Freedom -->
+                <div class="glass p-8 rounded-[2rem] hover:border-red-500/30 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-red-600/10 text-red-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="unlock" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-3 tracking-tight uppercase">Freedom Protocol</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Advanced tracking to reclaim time from addictions
+                        and stay under daily limits.</p>
+                </div>
+
+                <!-- Journal -->
+                <div class="glass p-8 rounded-[2rem] hover:border-emerald-500/30 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-emerald-600/10 text-emerald-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-3 tracking-tight uppercase">Mindset Logs</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Daily reflections with mood sentiment and
+                        localized time-stamping for mental clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 px-6 relative">
+        <div
+            class="max-w-4xl mx-auto glass p-12 lg:p-20 rounded-[3rem] text-center space-y-10 relative overflow-hidden">
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px]"></div>
+            <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-amber-600/10 rounded-full blur-[100px]"></div>
+
+            <div class="space-y-4">
+                <h2 class="text-5xl font-extrabold text-white tracking-tighter">100% Free. <br> Forever for Everyone.
+                </h2>
+                <p class="text-slate-400 text-lg">No credit cards, no subscriptions, no bloat. Just pure productivity.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4 max-w-lg mx-auto">
+                <div class="flex items-center gap-3 text-sm font-semibold text-slate-300">
+                    <i data-lucide="check-circle-2" class="text-blue-500 w-5 h-5"></i> Unlimited Tasks
+                </div>
+                <div class="flex items-center gap-3 text-sm font-semibold text-slate-300">
+                    <i data-lucide="check-circle-2" class="text-blue-500 w-5 h-5"></i> All Advanced Trackers
+                </div>
+                <div class="flex items-center gap-3 text-sm font-semibold text-slate-300">
+                    <i data-lucide="check-circle-2" class="text-blue-500 w-5 h-5"></i> Local Storage Data
+                </div>
+                <div class="flex items-center gap-3 text-sm font-semibold text-slate-300">
+                    <i data-lucide="check-circle-2" class="text-blue-500 w-5 h-5"></i> Dark & Light Themes
+                </div>
+            </div>
+
+            <button
+                class="px-10 py-5 bg-white text-black rounded-3xl font-extrabold text-xl shadow-2xl shadow-blue-500/20 hover:scale-105 transition-all active:scale-95">
+                Launch Dashboard Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
+            <div class="space-y-4">
+                <h3 class="text-4xl font-bold text-white tracking-tight">Need a custom feature?</h3>
+                <p class="text-slate-400 max-w-xl">We're building this for you. Join our WhatsApp bridge to provide
+                    feedback or request a paid custom build for your business. You can also support us by donating.</p>
+            </div>
+
+            <a href="https://wa.me/918697164049?text=Hi! I am interested in Ultimate Productivity feedback/custom features for the Ultimate Tracker"
+                class="group relative inline-flex items-center gap-4 px-12 py-6 bg-[#25D366] text-white rounded-[2rem] font-black text-2xl shadow-2xl shadow-green-500/20 hover:-translate-y-2 transition-all">
+                <i data-lucide="message-circle" class="w-10 h-10"></i>
+                Chat on WhatsApp
+                <div
+                    class="absolute -inset-2 bg-green-500 rounded-[2.5rem] blur opacity-0 group-hover:opacity-20 transition">
+                </div>
+            </a>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 pt-10">
+                <div class="text-center">
+                    <p class="text-xl font-bold text-white">24h</p>
+                    <p class="text-[10px] uppercase font-bold text-muted-foreground tracking-widest mt-1">Response Time
+                    </p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-bold text-white">Direct</p>
+                    <p class="text-[10px] uppercase font-bold text-muted-foreground tracking-widest mt-1">Founder Access
+                    </p>
+                </div>
+                <div class="text-center col-span-2 md:col-span-1">
+                    <p class="text-xl font-bold text-white">Custom</p>
+                    <p class="text-[10px] uppercase font-bold text-muted-foreground tracking-widest mt-1">Feature List
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-blue-600/20 text-blue-500 rounded-lg flex items-center justify-center">
+                    <i data-lucide="zap" class="w-5 h-5"></i>
+                </div>
+                <span class="text-sm font-bold text-white tracking-widest uppercase">Ultimate</span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium max-w-lg mx-auto">
+                © 2026 Ultimate Productivity. Built for high-performers. <br>
+                <span class="text-slate-600">Terms & Conditions: By using this tool, you agree that anonymous usage data
+                    may be used by the owner to improve the product and develop new features.</span>
+            </p>
+            <div class="flex gap-6 text-slate-400">
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
